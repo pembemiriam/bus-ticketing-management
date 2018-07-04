@@ -1,0 +1,29 @@
+.login-div{
+    background-color: white;
+    border-radius: 5px;
+    width:40%;
+    margin-left: 30%;
+    margin-top: 10%;
+    
+}
+.app-input,.app-input1{
+    display:flex;
+    display:inline-block;
+    
+}
+.form-div{
+    margin-left:10%;
+}
+.app-input2{
+    
+    width:80%;
+}
+.app-input1{
+    width:90%;
+}
+
+.btn{
+    margin-left: 5%;
+    margin-right: 10%;
+    width:75%;
+}
