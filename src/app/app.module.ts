@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import {RouterModule, Routes} from '@angular/router'
 import { MatCardModule, MatFormFieldModule, MatButtonModule, 
-  MatDividerModule, MatToolbarModule,MatListModule} from '@angular/material';
+  MatDividerModule, MatListModule, MatIconModule,MatToolbarModule,
+MatSelectModule, MatOptionModule, MatDatepickerModule, MatTableModule} from '@angular/material';
+
 
 
 import { AppComponent } from './app.component';
@@ -13,6 +16,9 @@ import { AddDestinationComponent } from './manager/add-destination/add-destinati
 import { WelcomeComponent } from './user/welcome/welcome.component';
 import {NavbarComponent} from './user/navbar/navbar.component';
 import {ListDestinationComponent} from './user/listDestination/list-destination.component'
+import { EditDestinationComponent } from './manager/edit-destination/edit-destination.component';
+import { SearchClientsComponent } from './manager/search-clients/search-clients.component';
+import { ViewClientsComponent } from './manager/view-clients/view-clients.component';
 
 
 
@@ -21,8 +27,14 @@ const appRoutes: Routes=[
   {path: 'navbar', component: NavbarComponent, children: [
         { path: '', redirectTo: 'welcome', pathMatch: 'full' },
            {path: 'welcome', component: WelcomeComponent},
-           {path:'listDestination', component:ListDestinationComponent}
+           {path:'listDestination', component:ListDestinationComponent},
+     {path: 'dashboard', component: DashboardComponent},
+    {path: 'edit-destination', component: EditDestinationComponent},
+    {path: 'search-clients', component: SearchClientsComponent},
+    {path: 'view-clients', component: ViewClientsComponent},
+     {path: 'login', component: LoginComponent},
 ]}
+
 ]
 @NgModule({
   declarations: [
@@ -33,11 +45,18 @@ const appRoutes: Routes=[
     WelcomeComponent,
     NavbarComponent,
     ListDestinationComponent
+     EditDestinationComponent,
+    SearchClientsComponent,
+    ViewClientsComponent
   ],
+
   imports: [
     RouterModule.forRoot(appRoutes),
-    BrowserModule,BrowserAnimationsModule,MatCardModule, MatFormFieldModule, MatButtonModule, 
-    MatDividerModule,MatToolbarModule,MatListModule
+    BrowserModule,BrowserAnimationsModule,FormsModule, ReactiveFormsModule,
+    MatCardModule, MatFormFieldModule, MatButtonModule, 
+    MatDividerModule,MatListModule, MatIconModule, MatToolbarModule,
+    MatSelectModule, MatOptionModule, MatDatepickerModule, MatTableModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

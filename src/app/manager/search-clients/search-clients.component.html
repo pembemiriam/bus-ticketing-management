@@ -1,0 +1,24 @@
+<mat-toolbar>
+  Search Clients
+</mat-toolbar>
+<mat-form-field>
+    <mat-select placeholder="Destination">
+      <mat-option *ngFor="let destination of destinations" [value]="destination.value">
+        {{destination.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+      <mat-select placeholder="Departure Time">
+        <mat-option *ngFor="let time of times" [value]="time.value">
+          {{time.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <button mat-raised-button color="primary" [routerLink]="['view_clients']">View</button>
+      
