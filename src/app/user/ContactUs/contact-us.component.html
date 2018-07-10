@@ -1,0 +1,21 @@
+<div class="example-container mat-elevation-z2">
+    <h2 class="header">Contact Us</h2>
+    <p class="para">Got a question? We'd love to hear from you. Send us a message
+        <br> and we'll respond as soon as possible</p>
+    <form class="app-form" [formGroup]="form">
+        <mat-form-field class="app-input">
+            <input type="text" matInput formControlName="name" class="form-control" placeholder="Name" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="app-input">
+            <input type="text" matInput formControlName="email" class="form-control" placeholder="Email Address" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="app-input">
+            <textarea matInput placeholder="Message" placeholder="message" class="form-control"></textarea>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" class="btn"> Send Message</button>
+
+    </form>
+</div>

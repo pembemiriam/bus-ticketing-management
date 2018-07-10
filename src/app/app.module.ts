@@ -5,7 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import {RouterModule, Routes} from '@angular/router'
 import { MatCardModule, MatFormFieldModule, MatButtonModule, 
   MatDividerModule, MatListModule, MatIconModule,MatToolbarModule,
-MatSelectModule, MatOptionModule, MatDatepickerModule, MatTableModule} from '@angular/material';
+MatSelectModule, MatOptionModule, MatDatepickerModule, MatTableModule,
+MatInputModule,MatNativeDateModule,MatGridListModule} from '@angular/material';
 
 
 
@@ -19,15 +20,21 @@ import {ListDestinationComponent} from './user/listDestination/list-destination.
 import { EditDestinationComponent } from './manager/edit-destination/edit-destination.component';
 import { SearchClientsComponent } from './manager/search-clients/search-clients.component';
 import { ViewClientsComponent } from './manager/view-clients/view-clients.component';
+import {ContactUsComponent} from './user/ContactUs/contact-us.component';
+import {AboutComponent} from './user/about/about.component'
+import {RegisterComponent} from './user/register/register.component'
 
 
 
 
 const appRoutes: Routes=[
   {path: 'navbar', component: NavbarComponent, children: [
-        { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+           { path: '', redirectTo: 'welcome', pathMatch: 'full' },
            {path: 'welcome', component: WelcomeComponent},
            {path:'listDestination', component:ListDestinationComponent},
+           {path:'contact-us',component:ContactUsComponent},
+           {path:'about',component:AboutComponent},
+           {path:'register', component:RegisterComponent},
      {path: 'dashboard', component: DashboardComponent},
     {path: 'edit-destination', component: EditDestinationComponent},
     {path: 'search-clients', component: SearchClientsComponent},
@@ -44,10 +51,13 @@ const appRoutes: Routes=[
     AddDestinationComponent,
     WelcomeComponent,
     NavbarComponent,
-    ListDestinationComponent
+    ListDestinationComponent,
      EditDestinationComponent,
     SearchClientsComponent,
-    ViewClientsComponent
+    ViewClientsComponent,
+    ContactUsComponent,
+    AboutComponent,
+    RegisterComponent
   ],
 
   imports: [
@@ -55,8 +65,8 @@ const appRoutes: Routes=[
     BrowserModule,BrowserAnimationsModule,FormsModule, ReactiveFormsModule,
     MatCardModule, MatFormFieldModule, MatButtonModule, 
     MatDividerModule,MatListModule, MatIconModule, MatToolbarModule,
-    MatSelectModule, MatOptionModule, MatDatepickerModule, MatTableModule
-
+    MatSelectModule, MatOptionModule, MatDatepickerModule, MatTableModule,MatInputModule,
+    MatNativeDateModule,MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

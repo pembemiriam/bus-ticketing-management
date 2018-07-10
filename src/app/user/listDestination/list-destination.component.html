@@ -1,35 +1,66 @@
 <div class="example-container">
-    <mat-card class="destination">
-         <h4> Available Destination</h4>
-        <mat-list>
-            <mat-list-item (click)="show=!show"> YAOUNDE </mat-list-item>
-            <mat-list-item> DOUALA </mat-list-item>
-            <mat-list-item> BAFOUSSAM </mat-list-item>
-            <mat-list-item> BAMENDA </mat-list-item>
-           </mat-list>
-    </mat-card>
-
-    <mat-card clas="yde">
-            <h4> Departure Time</h4>
-           <mat-list>
-               <mat-list-item> 6:00AM </mat-list-item>
-               <mat-list-item> 9:00AM</mat-list-item>
-               <mat-list-item> 12:00PM</mat-list-item>
-               <mat-list-item> 15:00PM </mat-list-item>
-               <mat-list-item> 18:00PM </mat-list-item>
-               <mat-list-item> 20:00PM </mat-list-item>
-              </mat-list>
-       </mat-card>
-   <mat-card class="dla">
-        
-   </mat-card>
-   
-   <mat-card class="baf">
-        
-    </mat-card>
-
-    <mat-card class="bda">
-        
+        <button mat-raised-button color="primary" [routerLink]="['/navbar/register']"  class="btn">Make a Reservation</button>
+    <div class="destination">
+        <mat-card>
+            <h4> Available Destination</h4>
+            <mat-list>
+                <mat-list-item (click)="yde()"> YAOUNDE </mat-list-item>
+                <mat-list-item (click)="dla()"> DOUALA </mat-list-item>
+                <mat-list-item (click)="baf()"> BAFOUSSAM </mat-list-item>
+                <mat-list-item (click)="bda()"> BAMENDA </mat-list-item>
+            </mat-list>
         </mat-card>
+    </div>
+
+    <div class="time">
+        <div *ngIf="yde1">
+            <mat-card>
+                <h4> Departure Time</h4>
+                <mat-list>
+                    <mat-list-item> 6:00AM </mat-list-item>
+                    <mat-list-item> 9:00AM</mat-list-item>
+                    <mat-list-item> 12:00PM</mat-list-item>
+                    <mat-list-item> 15:00PM </mat-list-item>
+                    <mat-list-item> 18:00PM </mat-list-item>
+                    <mat-list-item> 20:00PM </mat-list-item>
+                </mat-list>
+            </mat-card>
+        </div>
+
+        <div *ngIf="dla1">
+            <mat-card>
+                <h4> Departure Time</h4>
+                <mat-list>
+                    <mat-list-item> 6:00AM </mat-list-item>
+                    <mat-list-item> 9:00AM</mat-list-item>
+                    <mat-list-item> 12:00PM</mat-list-item>
+                    <mat-list-item> 15:00PM </mat-list-item>
+                    <mat-list-item> 18:00PM </mat-list-item>
+                    <mat-list-item> 20:00PM </mat-list-item>
+                </mat-list>
+            </mat-card>
+        </div>
+
+        <div *ngIf="baf1">
+            <mat-card>
+                <h4> Departure Time</h4>
+                <mat-list>
+                    <mat-list-item> 9:00AM</mat-list-item>
+                    <mat-list-item> 12:00PM</mat-list-item>
+                </mat-list>
+            </mat-card>
+        </div>
+
+        <div *ngIf="bda1">
+            <mat-card>
+                <h4> Departure Time</h4>
+                <mat-list>
+                    <mat-list-item> 9:00AM</mat-list-item>
+                    <mat-list-item> 12:00PM</mat-list-item>
+                    <mat-list-item> 20:00PM </mat-list-item>
+                </mat-list>
+            </mat-card>
+        </div>
+    </div>
 
 </div>
