@@ -1,9 +1,11 @@
 .dash-card{
     width: 50%;
     margin-left:25%;
+    margin-top:5%;
 }
 .greetings{
-    margin-left:45%;
+ margin-left: 45%;   
+    
 }
 .heading{
     margin-left: 30%;

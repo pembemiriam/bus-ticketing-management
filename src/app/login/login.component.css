@@ -27,3 +27,11 @@
     margin-right: 10%;
     width:75%;
 }
+.main-background{
+
+    flex: 1;
+    width: 99%;
+    height:99%;
+    position: fixed;
+    min-height: 99%;
+}

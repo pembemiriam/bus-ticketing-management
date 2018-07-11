@@ -5,14 +5,12 @@ export interface Destination {
   viewValue: string;
 }
 
-
-
 @Component({
-  selector: 'app-search-clients',
-  templateUrl: './search-clients.component.html',
-  styleUrls: ['./search-clients.component.css']
+  selector: 'app-clients',
+  templateUrl: './clients.component.html',
+  styleUrls: ['./clients.component.css']
 })
-export class SearchClientsComponent implements OnInit {
+export class ClientsComponent implements OnInit {
   destinations: Destination[] = [
     {value: 'Yaounde', viewValue: 'Yaounde'},
    

@@ -1,4 +1,15 @@
-table {
-    width: 100%;
-  }
+.table {
+    width: 80%;
+    margin-left:10%;
+    margin-top: 7%;
+}
+  .greetings{
+    margin-left: 45%; 
+    padding:10px; 
+       
+   }
+   .tool{
+    width:100%;
+    position: fixed;
+}
   

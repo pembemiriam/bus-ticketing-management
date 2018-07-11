@@ -1,0 +1,17 @@
+.greetings{
+    margin-left: 45%; 
+    padding:10px; 
+       
+   }
+   .dash-card{
+    width: 50%;
+    margin-left:25%;
+    margin-top:5%;
+}
+.btn1{
+    margin-left:50%;
+}
+.tool{
+    width:100%;
+    position: fixed;
+}

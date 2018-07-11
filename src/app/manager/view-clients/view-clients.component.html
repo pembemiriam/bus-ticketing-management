@@ -1,3 +1,6 @@
+<div class="my-background">
+  <mat-toolbar class="tool"><span class="greetings">VIEW CLIENTS</span></mat-toolbar>
+<div class="table mat-elevation-z8">
 <mat-table #table [dataSource]="datasource" >
 
   <!-- Position Column -->
@@ -26,5 +29,6 @@
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
   <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
-  
+  </div>
+  </div>
   

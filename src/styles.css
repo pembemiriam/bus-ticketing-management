@@ -3,3 +3,9 @@
 .main-div{
     margin-left: 20%;
 }
+.my-background{
+    background-color: skyblue;
+    position:fixed;
+    min-height: 99%;
+    min-width: 99%;
+}
