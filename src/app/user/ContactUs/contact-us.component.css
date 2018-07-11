@@ -1,0 +1,31 @@
+
+.example-container{
+    margin-top:5%;
+    width:60%;
+    margin-left:25%;
+    margin-right:25%;
+    background-color:lightblue;
+    font-style: italic;
+}
+
+.header{
+    padding-top:5%;
+    font-size: 48px
+    
+}
+.header,.para{
+    text-align:center;
+    margin-top:5%;
+}
+
+.app-input{
+    width:40%;
+    padding-left:25%;
+}
+.btn{
+    margin-left:25%;
+    width:40%;
+    text-align: center;
+    margin-bottom:5%;
+    font-style: italic;
+}

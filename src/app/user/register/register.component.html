@@ -1,0 +1,37 @@
+<div class="example-container mat-elevation-z2">
+    <h3 class="dest"> Destination:Yaounde </h3>
+    <h3 class="time"> Departure Time: 6:00AM </h3>
+
+    <form class="app-form" [formGroup]="form">
+        <mat-form-field class="app-input">
+            <input type="text" matInput formControlName="name" class="form-control" placeholder="Name" required>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="app-input">
+            <input type="text" matInput formControlName="surname" class="form-control" placeholder="Surname" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="app-input">
+            <input type="number" matInput formControlName="id" class="form-control" placeholder="Id card Number" required>
+        </mat-form-field>
+        <br>
+
+        <mat-form-field class="app-input">
+            <input type="number" matInput formControlName="tarif" class="form-control" placeholder="Tarif" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="app-input">
+            <input matInput [matDatepicker]="picker" placeholder="Enter date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
+        <h4 class="dest"> Select a Sit</h4>
+    <hr class="line">
+        <br>
+        <p>Red : Occupied</p>
+        <p>Green: Available</p>
+        
+    </form>
+</div>

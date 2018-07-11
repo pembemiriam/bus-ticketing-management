@@ -1,9 +1,16 @@
 <div>
   <mat-toolbar class="toolbar">
     <ul id="menu">
-      <li class="home">Home</li>
-      <li>Contact</li>
-      <li>About Us</li>
+      <li>
+        <a [routerLink]="['/navbar/welcome']" class="home">Home</a>
+      </li>
+      <li>
+        <a [routerLink]="['/navbar/contact-us']"> Contact</a>
+      </li>
+
+      <li>
+        <a [routerLink]="['/navbar/about']">About</a>
+     </li>
     </ul>
   </mat-toolbar>
   <router-outlet></router-outlet>

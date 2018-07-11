@@ -4,7 +4,7 @@
     
 }
 
-div mat-card{
+ .destination,.time{
     display:inline-block;
     vertical-align: top;
     width:42%;
@@ -14,4 +14,9 @@ div mat-card{
 .time{
     margin-right:2%;
     margin-left:2%;
+}
+
+.btn{
+    margin-left:80%;
+    margin-bottom:1%;
 }
