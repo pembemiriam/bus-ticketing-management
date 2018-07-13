@@ -19,13 +19,10 @@ import {NavbarComponent} from './user/navbar/navbar.component';
 import {ListDestinationComponent} from './user/listDestination/list-destination.component'
 import { EditDestinationComponent } from './manager/edit-destination/edit-destination.component';
 import { ViewClientsComponent } from './manager/view-clients/view-clients.component';
-<<<<<<< Updated upstream
 import {ContactUsComponent} from './user/ContactUs/contact-us.component';
 import {AboutComponent} from './user/about/about.component'
 import {RegisterComponent} from './user/register/register.component'
-=======
 import { ClientsComponent } from './manager/clients/clients.component';
->>>>>>> Stashed changes
 
 
 
@@ -40,19 +37,11 @@ const appRoutes: Routes=[
            { path: '', redirectTo: 'welcome', pathMatch: 'full' },
            {path: 'welcome', component: WelcomeComponent},
            {path:'listDestination', component:ListDestinationComponent},
-<<<<<<< Updated upstream
            {path:'contact-us',component:ContactUsComponent},
            {path:'about',component:AboutComponent},
            {path:'register', component:RegisterComponent},
-     {path: 'dashboard', component: DashboardComponent},
-    {path: 'edit-destination', component: EditDestinationComponent},
-    {path: 'search-clients', component: SearchClientsComponent},
-    {path: 'view-clients', component: ViewClientsComponent},
-     {path: 'login', component: LoginComponent},
-=======
-   
->>>>>>> Stashed changes
-]}
+           {path: 'login', component: LoginComponent}]
+     }
 
 ]
 @NgModule({
@@ -65,16 +54,12 @@ const appRoutes: Routes=[
     NavbarComponent,
     ListDestinationComponent,
      EditDestinationComponent,
-<<<<<<< Updated upstream
-    SearchClientsComponent,
     ViewClientsComponent,
     ContactUsComponent,
     AboutComponent,
-    RegisterComponent
-=======
+    RegisterComponent,
     ViewClientsComponent,
     ClientsComponent
->>>>>>> Stashed changes
   ],
 
   imports: [
