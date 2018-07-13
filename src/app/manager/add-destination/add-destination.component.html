@@ -1,3 +1,30 @@
-<mat-card>
-  
-</mat-card>
+<div class="my-background">
+    <mat-toolbar class="tool"><span class="greetings">ADD DESTINATION</span></mat-toolbar>
+  <mat-card class="dash-card">
+    <mat-form-field>
+      <input matInput placeholder="Destination">
+  </mat-form-field>
+  <br/>
+  <mat-form-field>
+      <mat-select placeholder="Departure Time">
+        <mat-option *ngFor="let time of times" [value]="time.value">
+          {{time.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Add</button>
+    <br/>
+    <mat-form-field>
+        <input matInput placeholder="Amount">
+    
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+        <input matInput placeholder="Car number">
+    
+    </mat-form-field>
+    <br/>
+    <button mat-raised-button color="primary" class="btn1">Save</button>
+    
+  </mat-card>
+  </div>

@@ -1,7 +1,7 @@
 .dash-card{
     width: 50%;
     margin-left:25%;
-    margin-top:5%;
+    margin-top:3%;
 }
 .greetings{
  margin-left: 45%;   
@@ -20,3 +20,9 @@
 .add{
     margin-left: 80%;
 }
+.tool{
+    margin-top:2%;
+    width: 60%;
+    margin-left: 20%;
+}
+

@@ -28,11 +28,7 @@ import { ClientsComponent } from './manager/clients/clients.component';
 
 
 const appRoutes: Routes=[
-  {path: 'login', component: LoginComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'edit-destination', component: EditDestinationComponent},
-  {path: 'view-clients', component: ViewClientsComponent},
-  {path: 'clients', component:ClientsComponent},
+ 
   {path: 'navbar', component: NavbarComponent, children: [
            { path: '', redirectTo: 'welcome', pathMatch: 'full' },
            {path: 'welcome', component: WelcomeComponent},
@@ -40,6 +36,12 @@ const appRoutes: Routes=[
            {path:'contact-us',component:ContactUsComponent},
            {path:'about',component:AboutComponent},
            {path:'register', component:RegisterComponent},
+           {path: 'login', component: LoginComponent},
+           {path: 'add', component: AddDestinationComponent},
+           {path: 'dashboard', component: DashboardComponent},
+           {path: 'edit-destination', component: EditDestinationComponent},
+           {path: 'view-clients', component: ViewClientsComponent},
+           {path: 'clients', component:ClientsComponent},
      
 ]}
 
