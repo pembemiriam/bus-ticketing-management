@@ -28,7 +28,15 @@ import { ClientsComponent } from './manager/clients/clients.component';
 
 
 const appRoutes: Routes=[
+<<<<<<< HEAD
  
+=======
+
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'edit-destination', component: EditDestinationComponent},
+  {path: 'view-clients', component: ViewClientsComponent},
+  {path: 'clients', component:ClientsComponent},
+>>>>>>> 0ca432bdd2171d6e81e1ebce35fde0149946d326
   {path: 'navbar', component: NavbarComponent, children: [
            { path: '', redirectTo: 'welcome', pathMatch: 'full' },
            {path: 'welcome', component: WelcomeComponent},
@@ -36,14 +44,22 @@ const appRoutes: Routes=[
            {path:'contact-us',component:ContactUsComponent},
            {path:'about',component:AboutComponent},
            {path:'register', component:RegisterComponent},
+<<<<<<< HEAD
            {path: 'login', component: LoginComponent},
            {path: 'add', component: AddDestinationComponent},
            {path: 'dashboard', component: DashboardComponent},
            {path: 'edit-destination', component: EditDestinationComponent},
            {path: 'view-clients', component: ViewClientsComponent},
            {path: 'clients', component:ClientsComponent},
+=======
+
+           {path: 'login', component: LoginComponent}]
+     }
+
+>>>>>>> 0ca432bdd2171d6e81e1ebce35fde0149946d326
      
 ]}
+
 
 ]
 @NgModule({
@@ -60,6 +76,7 @@ const appRoutes: Routes=[
     ContactUsComponent,
     AboutComponent,
     RegisterComponent,
+    ViewClientsComponent,
     ClientsComponent
   ],
 
