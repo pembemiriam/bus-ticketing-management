@@ -12,8 +12,16 @@
         </mat-option>
       </mat-select>
     </mat-form-field>
-    <button mat-raised-button color="primary">Add</button>
+    <button mat-raised-button color="primary" (onClick)="add()">Add</button>
     <br/>
+    <div *ngIf="show">
+        <mat-form-field class="app-input" required>
+          <mat-select placeholder="select Credit">
+            <mat-option value="option">option</mat-option>
+          </mat-select>
+        </mat-form-field>
+        </div>
+        <br/>
     <mat-form-field>
         <input matInput placeholder="Amount">
     

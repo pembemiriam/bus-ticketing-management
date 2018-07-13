@@ -15,6 +15,12 @@ export class ClientsComponent implements OnInit {
     {value: 'Yaounde', viewValue: 'Yaounde'},
    
   ];
+  times: Time[] = [
+    {value: '9:00pm', viewValue: '9:00pm'},
+   
+  ];
+
+
 
   constructor() { }
 

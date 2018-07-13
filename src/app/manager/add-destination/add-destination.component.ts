@@ -15,10 +15,14 @@ export class AddDestinationComponent implements OnInit {
    
   ];
 
+  show = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+  add(show){
+    this.show = true;
   }
 
 }
