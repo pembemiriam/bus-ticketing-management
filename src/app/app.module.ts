@@ -28,7 +28,7 @@ import { ClientsComponent } from './manager/clients/clients.component';
 
 
 const appRoutes: Routes=[
-  {path: 'login', component: LoginComponent},
+
   {path: 'dashboard', component: DashboardComponent},
   {path: 'edit-destination', component: EditDestinationComponent},
   {path: 'view-clients', component: ViewClientsComponent},
@@ -40,8 +40,13 @@ const appRoutes: Routes=[
            {path:'contact-us',component:ContactUsComponent},
            {path:'about',component:AboutComponent},
            {path:'register', component:RegisterComponent},
+
            {path: 'login', component: LoginComponent}]
      }
+
+     
+]}
+
 
 ]
 @NgModule({
