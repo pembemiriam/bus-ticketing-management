@@ -26,12 +26,23 @@
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
-        
-        <h4 class="dest"> Select a Sit</h4>
-    <hr class="line">
         <br>
         <p>Red : Occupied</p>
         <p>Green: Available</p>
+        
+        <h4 class="dest"> Select a Sit</h4>
+    <hr class="line">
+       
+    <mat-form-field class="app-input">
+        <input type="number" matInput formControlName="seatNumber" class="form-control" placeholder="Seat Number" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="app-input">
+        <input type="text" matInput formControlName="carNumber" class="form-control" placeholder="Car Number" required>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" class="btn">Save</button>
+    <button mat-raised-button color="warn" class="btn1">cancel</button>
         
     </form>
 </div>

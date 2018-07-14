@@ -2,7 +2,7 @@
 .header {
     text-align: center;
     font-style: italic;
-    margin-top:3%;
+    margin-top:2%;
     
 }
 .image{
@@ -12,9 +12,9 @@
 }
 
 .para{
-    padding-top: 2%;
+    padding-top: 1%;
     padding-left: 20%;
     padding-right: 20%;
     text-align: justify;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }

@@ -17,7 +17,9 @@ export class RegisterComponent implements OnInit {
           name:['',Validators.required],
           surname:['',Validators.required],
           id:['',Validators.required],
-         tarif:['',Validators.required]
+         tarif:['',Validators.required],
+         seatNumber:['',Validators.required],
+         carNumber:['',Validators.required],
         })
   
       }
