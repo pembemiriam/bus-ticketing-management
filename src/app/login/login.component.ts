@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 });
   }
   public onLoginClick(loginForm){
-    this.router.navigate(['./navbar/dashboard']);
+    this.router.navigate(['./dashboard']);
   }
 
 }
