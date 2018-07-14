@@ -29,9 +29,9 @@ import { ClientsComponent } from './manager/clients/clients.component';
 
 const appRoutes: Routes=[
  
-  {path: 'navbar', component: NavbarComponent, children: [
-           { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-           {path: 'welcome', component: WelcomeComponent},
+  {path: '', component: NavbarComponent, children: [
+           { path: '', redirectTo: 'home', pathMatch: 'full' },
+           {path: 'home', component: WelcomeComponent},
            {path:'listDestination', component:ListDestinationComponent},
            {path:'contact-us',component:ContactUsComponent},
            {path:'about',component:AboutComponent},

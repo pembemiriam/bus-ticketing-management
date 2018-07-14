@@ -6,9 +6,10 @@
 
 ul#menu li{
     display: inline;
-    padding: 35px;
+    padding: 15px;
     font-style: italic;
 }
-.home{
-    
+
+#menu{
+    padding-left:35%;
 }
