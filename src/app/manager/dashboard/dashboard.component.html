@@ -1,21 +1,21 @@
 <div class="my-background">
   <mat-toolbar class="tool"><span class="greetings">WELCOME MANAGER</span></mat-toolbar>
   <mat-card class="dash-card">
-      <button mat-raised-button color="primary"  class="add" [routerLink]="['/navbar/clients']">View clients</button>
+      <button mat-raised-button color="primary"  class="add" [routerLink]="['/clients']">View clients</button>
     <span class="heading">AVAILABLE DESTINATION</span>
     <br/>
     <mat-divider></mat-divider>
     <mat-list>
       <mat-list-item>
         YAOUNDE
-        <button mat-raised-button color="primary" class="btn1" [routerLink]="['/navbar/edit-destination']">Edit</button>
+        <button mat-raised-button color="primary" class="btn1" [routerLink]="['/edit-destination']">Edit</button>
         <button mat-raised-button color="warn"  class="btn2">Delete</button>
 
       </mat-list-item>
       <mat-list-item>
         DOUALA
         <div  class="btn1">
-        <button mat-raised-button color="primary" [routerLink]="['/navbar/edit-destination']">Edit</button>
+        <button mat-raised-button color="primary" [routerLink]="['/edit-destination']">Edit</button>
         <button mat-raised-button color="warn"   class="btn2">Delete</button>
 </div>
       </mat-list-item>
@@ -23,20 +23,20 @@
 
         BAFFOUSAM
         <div  class="btn1">
-        <button mat-raised-button color="primary" [routerLink]="['/navbar/edit-destination']">Edit</button>
+        <button mat-raised-button color="primary" [routerLink]="['/edit-destination']">Edit</button>
         <button mat-raised-button color="warn"   class="btn2">Delete</button>
 </div>
       </mat-list-item>
       <mat-list-item>
         BAMENDA
-        <button mat-raised-button color="primary"  class="btn1"[routerLink]="['/navbar/edit-destination']">Edit</button>
+        <button mat-raised-button color="primary"  class="btn1"[routerLink]="['/edit-destination']">Edit</button>
         <button mat-raised-button color="warn"   class="btn2">Delete</button>
 
       </mat-list-item>
     </mat-list>
     <br/>
     <br/>
-    <button mat-raised-button color="primary"  class="add" [routerLink]="['/navbar/add']">Add</button>
+    <button mat-raised-button color="primary"  class="add" [routerLink]="['/add']">Add</button>
   </mat-card>
 
 </div>
