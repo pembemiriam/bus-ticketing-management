@@ -23,9 +23,17 @@
 }
 
 .btn{
-   margin-left:20%;
-    size: 8%;
+   margin-left:30%;
+    margin-top:5%;
+    margin-bottom: 5%;
 }
 .btn1{
-    padding-left: 5%;
+    margin-left: 8%;
+}
+.avail{
+    padding-left: 20%;
+}
+.seat{
+    margin-left: 30%;
+    width: 40%;
 }

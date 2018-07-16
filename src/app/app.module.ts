@@ -6,7 +6,7 @@ import {RouterModule, Routes} from '@angular/router'
 import { MatCardModule, MatFormFieldModule, MatButtonModule, 
   MatDividerModule, MatListModule, MatIconModule,MatToolbarModule,
 MatSelectModule, MatOptionModule, MatDatepickerModule, MatTableModule,
-MatInputModule,MatNativeDateModule,MatGridListModule} from '@angular/material';
+MatInputModule,MatNativeDateModule,MatGridListModule,MatCheckboxModule} from '@angular/material';
 
 
 
@@ -75,7 +75,7 @@ const appRoutes: Routes=[
     MatCardModule, MatFormFieldModule, MatButtonModule, 
     MatDividerModule,MatListModule, MatIconModule, MatToolbarModule,
     MatSelectModule, MatOptionModule, MatDatepickerModule, MatTableModule,MatInputModule,
-    MatNativeDateModule,MatGridListModule
+    MatNativeDateModule,MatGridListModule,MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
